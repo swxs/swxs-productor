@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "productor"
 version = "0.1.1"
-description = ""
+description = "简单创建一个可以自动探索子类并加载的工厂"
 authors = ["swxs <466565029@qq.com>"]
+requires-python = ">=3.8"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[project]
+readme = "README.md"
