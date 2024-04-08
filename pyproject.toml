@@ -1,13 +1,22 @@
-[tool.poetry]
-name = "productor"
-version = "0.1.1"
-description = "简单创建一个可以自动探索子类并加载的工厂"
-authors = ["swxs <466565029@qq.com>"]
-requires-python = ">=3.8"
-
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
+name = "productor"
+version = "0.1.1"
+authors = [
+  { name="swxs", email="466565029@qq.com" },
+]
+description = "简单创建一个可以自动探索子类并加载的工厂"
+license = "BSD-2-Clause"
 readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/swxs/swxs-productor"
+Issues = "https://github.com/swxs/swxs-productor/issues"
